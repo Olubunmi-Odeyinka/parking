@@ -1,0 +1,62 @@
+@import "../node_modules/bootstrap/dist/css/bootstrap.css";
+@import "../node_modules/font-awesome/css/font-awesome.css";
+@import "./phoenix.css";
+
+/* This file is for your main application css. */
+.navbar {
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+.reduceVisibility {
+  /* opacity: 0.5; */
+  z-index: 5;
+}
+
+/* ==========Loading start============= */
+.loader {
+  border: 16px solid #f3f3f3;
+  border-radius: 50%;
+  border-top: 16px solid blue;
+  border-bottom: 16px solid blue;
+  width: 120px;
+  height: 120px;
+  -webkit-animation: spin 2s linear infinite;
+  animation: spin 2s linear infinite;
+}
+
+@-webkit-keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+  }
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+/* =================================== */
+
+div.loading_position {
+  /* z-index: 20; */
+
+  align-items: center;
+  justify-content: center;
+  vertical-align: center;
+}
+div.loading_container {
+  display: flex;
+  position: absolute;
+}
+
+/* =================================== */
+.MicrosoftMap .Infobox .infobox-actions {
+  height: 100%;
+}
